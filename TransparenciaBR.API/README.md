@@ -1,1 +1,0 @@
-﻿Este é um projeto que centraliza as buscas que cidadãos comuns queiram realizar sobre os gastos de parlamentares (Deputados e Senadores).
