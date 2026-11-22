@@ -15,7 +15,7 @@ public class DeputadosController : ControllerBase
         _camara = camara;
     }
 
-    [HttpGet("nomes")]
+    [HttpGet("dados")]
     public async Task<ActionResult<List<String>>> ListarNomes()
     {
         var deputados = await _camara.ListarDeputadosAsync();
