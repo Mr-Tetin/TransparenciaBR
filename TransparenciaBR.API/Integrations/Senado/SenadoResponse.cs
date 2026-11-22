@@ -24,6 +24,9 @@ public class SenadoItem
 {
     [JsonPropertyName("IdentificacaoParlamentar")]
     public IdentificacaoParlamentar? IdentificacaoParlamentar { get; set; }
+    
+    [JsonPropertyName("Mandato")]
+    public Mandato? Mandato { get; set; }
 }
 
 public class IdentificacaoParlamentar
@@ -45,4 +48,34 @@ public class IdentificacaoParlamentar
     
     [JsonPropertyName("UrlFotoParlamentar")]
     public string? UrlFotoParlamentar { get; set; }
+}
+
+public class Mandato
+{
+    [JsonPropertyName("CodigoMandato")]
+    public string? CodigoMandato { get; set; }
+    
+    [JsonPropertyName("PrimeiraLegislaturaDoMandato")]
+    public PrimeiraLegislaturaDoMandato? PrimeiraLegislaturaDoMandato { get; set; }
+    
+    [JsonPropertyName("SegundaLegislaturaDoMandato")]
+    public SegundaLegislaturaDoMandato? SegundaLegislaturaDoMandato { get; set; }
+}
+
+public class PrimeiraLegislaturaDoMandato
+{
+    [JsonPropertyName("DataInicio")]
+    public DateOnly DataInicio { get; set; }
+    
+    [JsonPropertyName("DataFim")]
+    public DateOnly DataFim { get; set; }
+}
+
+public class SegundaLegislaturaDoMandato
+{
+    [JsonPropertyName("DataInicio")]
+    public DateOnly DataInicio { get; set; }
+    
+    [JsonPropertyName("DataFim")]
+    public DateOnly DataFim { get; set; }
 }

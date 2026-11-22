@@ -16,7 +16,7 @@ public class SenadoController : ControllerBase
     }
 
     [HttpGet("nomes")]
-    public async Task<ActionResult<List<String>>> ListarNomes()
+    public async Task<ActionResult<List<SenadoItem>>> ListarNomes()
     {
         var senadores = await _senado.ListarSenadoresAsync();
         
