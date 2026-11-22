@@ -42,4 +42,7 @@ public class IdentificacaoParlamentar
     
     [JsonPropertyName("EmailParlamentar")]
     public string? EmailParlamentar { get; set; }
+    
+    [JsonPropertyName("UrlFotoParlamentar")]
+    public string? UrlFotoParlamentar { get; set; }
 }
