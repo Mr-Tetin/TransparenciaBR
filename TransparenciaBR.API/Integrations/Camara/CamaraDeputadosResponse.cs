@@ -12,4 +12,5 @@ public class CamaraDeputadosItem
     public String siglaPartido { get; set; } = "";
     public String siglaUf { get; set; } = "";
     public String email { get; set; } = "";
+    public String urlFoto { get; set; } = "";
 }

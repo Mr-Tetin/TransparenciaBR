@@ -14,4 +14,9 @@ public class CamaraClient
         var resposta = await _http.GetFromJsonAsync<CamaraDeputadoListaResponse>("deputados");
         return resposta?.Dados ?? new();
     }
+
+    public async Task<RespostaDespesas?> ListarDespesasDeputadosAsync(int idDeputado, int ano, int pagina = 1)
+    {
+        return await _http.GetFromJsonAsync<RespostaDespesas>($"deputados/{idDeputado}/despesas/?ano={ano}&itens=100&pagina={pagina}");
+    }
 }
