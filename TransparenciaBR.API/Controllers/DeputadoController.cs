@@ -14,7 +14,8 @@ public class DeputadosController : ControllerBase
     {
         _camara = camara;
     }
-
+    
+    //Rota dados gerais
     [HttpGet("dados")]
     public async Task<ActionResult<List<String>>> ListarNomes()
     {
@@ -23,6 +24,7 @@ public class DeputadosController : ControllerBase
         return Ok(nomes);
     }
 
+    //Rota gastos deputado
     [HttpGet("{idDeputado}/despesas")]
     public async Task<IActionResult> ListarDespesas(int idDeputado, [FromQuery] int ano = 2024, [FromQuery] int pagina = 1)
     {
