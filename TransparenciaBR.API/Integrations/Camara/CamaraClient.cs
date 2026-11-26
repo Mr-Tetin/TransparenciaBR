@@ -1,4 +1,6 @@
-﻿namespace TransparenciaBR.API.Integrations.Camara;
+﻿using TransparenciaBR.API.Integrations.Camara.Models;
+
+namespace TransparenciaBR.API.Integrations.Camara;
 
 public class CamaraClient
 {
@@ -15,7 +17,7 @@ public class CamaraClient
         return resposta?.Dados ?? new();
     }
 
-    public async Task<RespostaDespesas?> ListarDespesasDeputadosAsync(int idDeputado, int ano, int pagina = 1)
+    public async Task<RespostaDespesas> ListarDespesasDeputadosAsync(int idDeputado, int ano, int pagina = 1)
     {
         return await _http.GetFromJsonAsync<RespostaDespesas>($"deputados/{idDeputado}/despesas/?ano={ano}&itens=100&pagina={pagina}");
     }

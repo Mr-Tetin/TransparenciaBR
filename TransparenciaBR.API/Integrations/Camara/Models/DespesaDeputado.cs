@@ -1,30 +1,30 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace TransparenciaBR.API.Integrations.Camara;
+namespace TransparenciaBR.API.Integrations.Camara.Models;
 
 public class DespesaDeputado
 {
     [JsonPropertyName("ano")]
-    public int ano { get; set; }
+    public int Ano { get; set; }
     
     [JsonPropertyName("mes")]
-    public int mes { get; set; }
+    public int Mes { get; set; }
     
     [JsonPropertyName("tipoDespesa")]
-    public string? tipoDespesa { get; set; }
+    public string? TipoDespesa { get; set; }
     
     [JsonPropertyName("dataDocumento")]
-    public DateTime?  dataDocumento { get; set; }
+    public DateTime?  DataDocumento { get; set; }
     
     [JsonPropertyName("nomeFornecedor")]
-    public string? nomeFornecedor { get; set; }
+    public string? NomeFornecedor { get; set; }
     
     [JsonPropertyName("valorDocumento")]
-    public decimal sigla { get; set; }
+    public decimal Sigla { get; set; }
     
     [JsonPropertyName("valorLiquido")]
-    public decimal valorLiquido { get; set; }
+    public decimal ValorLiquido { get; set; }
     
     [JsonPropertyName("valorGlosa")]
-    public decimal valorGlosa { get; set; }
+    public decimal ValorGlosa { get; set; }
 }
