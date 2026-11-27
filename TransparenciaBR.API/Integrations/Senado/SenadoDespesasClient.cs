@@ -22,8 +22,6 @@ public class SenadoDespesasClient
         resposta.EnsureSuccessStatusCode();
         
         var json = await resposta.Content.ReadAsStringAsync();
-        
-        Console.WriteLine(json.Substring(0, Math.Min(2000, json.Length)));
 
         var despesas = JsonSerializer.Deserialize<List<SenadoDespesas>>(json) ?? new List<SenadoDespesas>();
 
