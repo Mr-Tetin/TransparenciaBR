@@ -27,9 +27,9 @@ Os dados vêm direto das APIs de **Dados Abertos** da Câmara dos Deputados e do
 
 Como o projeto fala de transparência, nada mais justo do que ser transparente sobre como ele foi feito:
 
-- **Backend (API em C#/.NET): feito inteiramente por mim.** Toda a lógica, a integração com as APIs da Câmara e do Senado, os modelos e os controllers foram escritos por mim, aprendendo em diversas fontes (documentação oficial da Microsoft, vídeos, artigos, fóruns e a própria documentação das APIs de dados abertos).
-- **Frontend (React): desenvolvido com auxílio de Inteligência Artificial.** A interface (componentes, estilos e organização das telas) foi gerada com ajuda de IA, e eu usei o projeto para integrar com o backend que construí.
-- **Este é o meu primeiro projeto em C#.** Então é natural encontrar pontos que podem ser melhorados. Feedbacks e sugestões são muito bem-vindos! 💜
+- **Backend (API em C#/.NET): feito inteiramente por mim.** Toda a lógica, a integração com as APIs da Câmara e do Senado, os modelos e os controllers foram escritos por mim, aprendendo em diversas fontes (documentação oficial da Microsoft, IAs para **sanar** dúvidas, vídeos, artigos, fóruns e a própria documentação das APIs de dados abertos).
+- **Frontend (React): desenvolvido com auxílio de Inteligência Artificial.** A interface (componentes, estilos e organização das telas) foi gerada com ajuda de IA, e eu usei o projeto para integrar com o backend que construí, contudo, eu que decidi arquitetura e tecnologias que ela ia usar.
+- **Este é o meu primeiro projeto em C#.** Então é natural encontrar pontos que podem ser melhorados. Feedbacks e sugestões são muito bem-vindas! 💜
 
 ---
 
