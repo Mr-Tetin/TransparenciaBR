@@ -16,8 +16,17 @@ public class DespesaDeputado
     [JsonPropertyName("dataDocumento")]
     public DateTime?  DataDocumento { get; set; }
     
+    [JsonPropertyName("urlDocumento")]
+    public string? UrlDocumento { get; set; }
+    
+    [JsonPropertyName("numDocumento")]
+    public string? NumDocumento { get; set; }
+    
     [JsonPropertyName("nomeFornecedor")]
     public string? NomeFornecedor { get; set; }
+    
+    [JsonPropertyName("cnpjcpfFornecedor")]
+    public string? CnpjCpfFornecedor { get; set; }
     
     [JsonPropertyName("valorDocumento")]
     public decimal Sigla { get; set; }

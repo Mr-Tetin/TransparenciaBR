@@ -22,6 +22,12 @@ builder.Services.AddHttpClient<SenadoClient>(client =>
     client.DefaultRequestHeaders.Add("Accept", "application/json");
 });
 
+//Despesas Senadores
+builder.Services.AddHttpClient<SenadoDespesasClient>(client =>
+{
+    client.BaseAddress = new Uri("https://adm.senado.gov.br/adm-dadosabertos/");
+});
+
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
