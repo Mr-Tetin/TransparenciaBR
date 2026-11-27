@@ -338,7 +338,7 @@ Como este é meu primeiro projeto em C#, há pontos que pretendo evoluir:
 
 ## 📄 Licença
 
-Defina aqui a licença do projeto (ex.: MIT).
+MIT
 
 ---
 
